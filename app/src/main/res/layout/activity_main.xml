@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.android.arcfej.MainActivity"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/picLogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/arcfejkesz_1_1"
+            android:scaleType="fitCenter" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtEmail"
+                android:text="mayer.miklos91@gmail.com"
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/picEmail"
+                android:autoLink="email"
+                android:maxLines="1"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/picEmail"
+                android:src="@drawable/email_icon"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignBottom="@id/txtEmail"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:padding="8dp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTel"
+                android:text="+36/20 *** ****"
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:layout_below="@id/txtEmail"
+                android:autoLink="phone"
+                android:layout_toRightOf="@+id/picTel"
+                android:maxLines="1"
+
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/picTel"
+                android:src="@drawable/phone_icon"
+                android:layout_below="@id/txtEmail"
+                android:layout_alignParentLeft="true"
+                android:layout_alignBottom="@+id/txtTel"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:padding="8dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtWebpage"
+                android:text="https://play.google.com/store/apps/dev?id=fake"
+                android:layout_toRightOf="@+id/picWebpage"
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:layout_below="@id/txtTel"
+                android:autoLink="web"
+                android:maxLines="1"
+
+                android:scrollHorizontally="true"
+
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/picWebpage"
+                android:src="@drawable/webpage"
+                android:layout_below="@id/picTel"
+                android:layout_alignParentLeft="true"
+                android:layout_alignBottom="@+id/txtWebpage"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:padding="8dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtDescription"
+                android:text="We are making superb games and accomplish anybody's idea!\nFeel free to contact us if you have a great idea for an application but lacking the knowledge to do it. We'll make it together!"
+                android:padding="8dp"
+                android:textSize="20sp"
+                android:layout_below="@id/txtWebpage"
+
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>
